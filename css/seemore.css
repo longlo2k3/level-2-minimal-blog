@@ -29,3 +29,27 @@
 .showMore {
   display: block;
 }
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .SeeMore {
+    margin: 60px 20px;
+    transition: all 0.3s ease;
+  }
+  .SeeMore div {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .SeeMore div {
+    padding: 8px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

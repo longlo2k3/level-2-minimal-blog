@@ -11,6 +11,7 @@
 .card-latest .card-content {
   display: flex;
   flex-direction: column;
+
   gap: 5vh;
   padding: 40px 60px;
   justify-content: center;
@@ -25,9 +26,10 @@
 }
 
 .card-content p {
+  min-height: 100px;
   font-size: 0.8;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 1.5rem;
   color: #657286;
 }
 
@@ -76,7 +78,7 @@
 
 @media screen and (max-width: 768px) {
   .card-latest .card-content {
-    padding: 0 30px;
+    padding: 16px;
     transition: all 0.3s ease;
   }
 }
@@ -89,8 +91,13 @@
   .card-latest .card-content {
     justify-content: start;
     max-width: 600px;
-    padding: 0;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .card-content h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
     transition: all 0.3s ease;
   }
 }
