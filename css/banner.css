@@ -1,0 +1,116 @@
+.main-container .banner-section {
+  padding: 60px 120px;
+  background-color: #fbfbfb;
+}
+
+.banner-section {
+  margin-top: 82px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.banner-section img:nth-child(2) {
+  width: 100%;
+  height: auto;
+  object-position: center;
+  object-fit: contain;
+  padding-right: 24px;
+  animation: bannerAnimationRightX 1s ease-in-out 0.2s;
+}
+
+@keyframes bannerAnimationRightX {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.banner-section h1 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 3.75rem;
+  background: linear-gradient(90deg, #ba1f23, #1f46ba);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 4.5rem;
+  padding-left: 24px;
+  animation: bannerAnimationLeftX 1s ease-in-out 0.2s;
+}
+
+@keyframes bannerAnimationLeftX {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content span {
+  display: flex;
+  align-items: center;
+}
+
+.banner-content p {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  color: #4a5568;
+  padding-left: 24px;
+  animation: bannerAnimationLeftX 1s ease-in-out 0.25s;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .main-container .banner-section {
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+  }
+  .banner-section {
+    margin-top: 106px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 620px) {
+  .banner-section {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .banner-section h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    transition: all 0.3s ease;
+  }
+  .banner-section img:nth-child(2) {
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+}

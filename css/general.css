@@ -1,0 +1,49 @@
+:root {
+  --title-color: #000000;
+  --text-color: #718096;
+  --hover-color: #ba1f23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-width: 300px;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.title-content {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: var(--title-color);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--text-color);
+}

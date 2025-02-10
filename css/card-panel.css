@@ -1,0 +1,107 @@
+.card-panel {
+  padding: 60px 120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-panel .card-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  border: 1px solid #dbd9d9;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card-panel-content .panel-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding: 0 20px 10px 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.panel-content-container .card-date a {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #2d3748;
+  transition: all 0.3s ease;
+}
+
+.card-date a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+  text-decoration-color: var(--hover-color);
+}
+
+.card-date a:active {
+  scale: 1.1;
+}
+
+.card-panel img {
+  flex: 1;
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-panel img:hover {
+  cursor: pointer;
+}
+
+.card-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .card-panel {
+    padding: 36px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    transition: all 0.3s ease;
+  }
+  .card-panel .card-panel-content {
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-panel {
+    padding: 36px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+  .card-panel {
+    padding: 36px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    transition: all 0.3s ease;
+  }
+  .card-panel {
+    grid-template-columns: repeat(1, 1fr);
+    transition: all 0.3s ease;
+  }
+  .card-panel .card-panel-content {
+    justify-content: start;
+    max-width: 600px;
+    padding: 0;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+}

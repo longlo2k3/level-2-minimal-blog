@@ -1,0 +1,31 @@
+.SeeMore {
+  margin: 60px 120px;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+}
+
+.SeeMore:hover {
+  cursor: pointer;
+}
+
+.SeeMore div {
+  width: fit-content;
+  padding: 8px 16px;
+  background: #990d92;
+  border-radius: 8px;
+  display: flex;
+  justify-items: center;
+  gap: 8px;
+}
+
+.SeeMore div img {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.showMore {
+  display: block;
+}
