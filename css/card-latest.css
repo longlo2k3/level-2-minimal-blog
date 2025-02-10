@@ -11,7 +11,6 @@
 .card-latest .card-content {
   display: flex;
   flex-direction: column;
-
   gap: 5vh;
   padding: 40px 60px;
   justify-content: center;
@@ -25,12 +24,19 @@
   background-clip: text;
 }
 
-.card-content p {
+.card-content p:nth-child(2) {
   min-height: 100px;
   font-size: 0.8;
   font-weight: 400;
   line-height: 1.5rem;
   color: #657286;
+}
+
+
+.card-content .card-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card-content .card-date a {
@@ -62,11 +68,6 @@
   border: 8px solid #657286;
 }
 
-.card-content .card-date {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
